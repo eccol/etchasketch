@@ -11,3 +11,7 @@
 
   aspect-ratio: 1;
 }
+
+.hovered {
+  background-color: black;
+}
