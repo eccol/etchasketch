@@ -1,0 +1,13 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  width: min-content;
+}
+
+.square {
+  width: 100px;
+  border: solid 1px black;
+
+  aspect-ratio: 1;
+}
