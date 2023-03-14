@@ -9,6 +9,8 @@ function createGrid() {
     gridSize = prompt("Size must be between 1 and 100");
   }
 
+  container.innerHTML = '';
+
   for (let i = 0; i < gridSize; i++) {
     const row = document.createElement('div');
     row.classList.add('row');
