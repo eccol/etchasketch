@@ -4,7 +4,10 @@ document.querySelector('#start').addEventListener('click', createGrid);
 // Create grid
 
 function createGrid() {
-  const gridSize = prompt("What size grid? 1-100");
+  let gridSize = prompt("What size grid? 1-100");
+  while (gridSize < 1 || gridSize > 100) {
+    gridSize = prompt("Size must be between 1 and 100");
+  }
 
   for (let i = 0; i < gridSize; i++) {
     const row = document.createElement('div');
@@ -22,10 +25,6 @@ function createGrid() {
   squares.forEach((sq) => sq.addEventListener('mouseenter', lightUp));
 
 }
-
-
-
-
 
 function lightUp(e) {
   // 'hovered' class in CSS adds the effect
